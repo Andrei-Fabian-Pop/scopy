@@ -241,6 +241,7 @@ FILE(GLOB SRC_LIST  src/*.cpp src/*.cc
 	src/patterngenerator/*/*.cpp
 	src/logicanalyzer/*.cpp
 	src/logicanalyzer/*/*.cpp
+	src/datalogger/*.cpp
 	src/gui/*.cpp
 )
 

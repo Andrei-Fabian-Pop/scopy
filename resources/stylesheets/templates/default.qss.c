@@ -329,7 +329,6 @@ QTextBrowser#aboutTextBrowser{
 	color: white;
 }
 
-/* Label, line and arrow button dividers between sections */
 
 /* Label associated with settings menu, right above a blue line divider */
 
@@ -339,7 +338,6 @@ QLabel[subsection_label=true], QLabel#lblSubsectionSeparator{
 	color: rgba(255, 255, 255, 70);
 }
 QFrame[subsection_line=true], QFrame#lineSubsectionSeparator{ border: 1px solid rgba(255, 255, 255, 70); }
-
 QPushButton[subsection_arrow_button=true]{
 	max-height: 8px;
 	max-width: 12px;
@@ -350,7 +348,7 @@ QPushButton[subsection_arrow_button=true]{
 	border-image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow.svg);
 >>>>>>> 8ae20b83 (ui: subsection_separator style update)
 }
-QPushButton#btnSubsectionSeparator:checked {
+QPushButton#btnSubsectionSeparator:checked, QPushButton#toggleChannels:checked {
 	max-height: 12px;
 <<<<<<< HEAD
 	max-width:  12px;
@@ -368,7 +366,7 @@ QPushButton[subsection_arrow_button=true]:checked {
 	border-image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow_right.svg);
 }
 
-QPushButton#btnSubsectionSeparator {
+QPushButton#btnSubsectionSeparator, QPushButton#toggleChannels {
 	max-height: 8px;
 	max-width:  12px;
 	border-image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow_right.svg);
@@ -686,6 +684,13 @@ adiscope--ChannelWidget QWidget#widget {
 }
 adiscope--ChannelWidget QWidget#widget[selected=true] {
 	background-color: rbga(20, 20, 22, 153);
+}
+
+
+.adiscope--ChannelWidget QWidget#widget:hover {
+	background-color: rbga(20, 20, 22, 153);
+	font-weight: bold;
+	border-bottom: 0px solid none;
 }
 
 /* Round check box */
