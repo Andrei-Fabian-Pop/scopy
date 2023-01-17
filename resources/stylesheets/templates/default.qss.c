@@ -341,34 +341,13 @@ QFrame[subsection_line=true], QFrame#lineSubsectionSeparator{ border: 1px solid 
 QPushButton[subsection_arrow_button=true]{
 	max-height: 12px;
 	max-width: 12px;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	border: none;
 	image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow_right.svg);
-=======
-	border-image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow.svg);
->>>>>>> 8ae20b83 (ui: subsection_separator style update)
 }
 QPushButton#btnSubsectionSeparator:checked, QPushButton#toggleChannels:checked {
 	max-height: 12px;
-<<<<<<< HEAD
-	max-width:  12px;
 	border: none;
 	image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow.svg);
-=======
-	max-width: 8px;
-	border-image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow.svg);
->>>>>>> 8ae20b83 (ui: subsection_separator style update)
-=======
-	border: none;
-	image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow.svg);
-}
-QPushButton#btnSubsectionSeparator:checked, QPushButton#toggleChannels:checked {
-	max-height: 12px;
-	max-width: 12px;
-	border: none;
-	image: url(:/icons/scopy-default/icons/sba_cmb_box_arrow.svg);
->>>>>>> f4047972 (general : subsection separator arrow style fix)
 }
 
 QPushButton[subsection_arrow_button=true]:checked {

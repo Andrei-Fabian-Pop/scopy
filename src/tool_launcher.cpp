@@ -1712,14 +1712,6 @@ void adiscope::ToolLauncher::enableAdcBasedTools()
 			});
 		}
 
-		if (filter->compatible(TOOL_DEBUGGER)) {
-			debugger = new Debugger(ctx, filter,menu->getToolMenuItemFor(TOOL_DEBUGGER),
-						&js_engine, this);
-			adc_users_group.addButton(menu->getToolMenuItemFor(TOOL_DEBUGGER)->getToolStopBtn());
-			QObject::connect(debugger, &Debugger::newDebuggerInstance, this,
-					 &ToolLauncher::addDebugWindow);
-		}
-
 		newInstrument = new NewInstrument(ctx, filter, menu->getToolMenuItemFor(TOOL_NEWINSTRUMENT), &js_engine,this);
 		toolList.push_back(newInstrument);
 
