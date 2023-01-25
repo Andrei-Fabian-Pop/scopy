@@ -30,6 +30,7 @@
 #include <QCoreApplication>
 #include <QFile>
 #include <QDir>
+#include <QTemporaryDir>
 
 using namespace adiscope;
 
@@ -38,7 +39,7 @@ ConnectDialog::ConnectDialog(QWidget *widget) : QWidget(widget),
 {
 	ui->setupUi(this);
 	ui->connectBtn->setText(tr("Connect"));
-	//The connect button will be disabled untill we write something in the hostname line edit
+	//The connect button will be disabled until we write something in the hostname line edit
 	ui->connectBtn->setDisabled(true);
 
 	connect(ui->connectBtn, SIGNAL(clicked()), this, SLOT(btnClicked()));
@@ -56,6 +57,32 @@ ConnectDialog::ConnectDialog(QWidget *widget) : QWidget(widget),
 	ui->infoSection->hide();
 
 	ui->demoDevicesComboBox->addItem("adalm2000");
+
+        // FIXME: undo this ig
+        QTemporaryDir tempDir;
+        if (tempDir.isValid()) {
+                const QString tempFileConfig = tempDir.path() + "config.xml";
+                const QString tempFileRuntimeA = tempDir.path() + "runtime_a.xml";
+                const QString tempFileRuntimeB = tempDir.path() + "runtime_b.xml";
+                const QString tempFileRuntimeC = tempDir.path() + "runtime_c.xml";
+                const QString tempFileRuntimeD = tempDir.path() + "runtime_d.xml";
+
+                QFile::copy(":/swiot/config.xml", tempFileConfig);
+                QFile::copy(":/swiot/runtime_a.xml", tempFileRuntimeA);
+                QFile::copy(":/swiot/runtime_b.xml", tempFileRuntimeB);
+                QFile::copy(":/swiot/runtime_c.xml", tempFileRuntimeC);
+                QFile::copy(":/swiot/runtime_d.xml", tempFileRuntimeD);
+
+
+//                ui->demoDevicesComboBox->addItem("generic /home/andrei-fabian/adi/generate_from_xml/generated_xmls/ad7124-8.xml");
+                ui->demoDevicesComboBox->addItem("generic " + tempFileConfig);
+                ui->demoDevicesComboBox->addItem("generic " + tempFileRuntimeA);
+                ui->demoDevicesComboBox->addItem("generic " + tempFileRuntimeB);
+                ui->demoDevicesComboBox->addItem("generic " + tempFileRuntimeC);
+                ui->demoDevicesComboBox->addItem("generic " + tempFileRuntimeD);
+        }
+
+
 	ui->demoDevicesComboBox->setDisabled(false);
 	process = new QProcess(this);
 }

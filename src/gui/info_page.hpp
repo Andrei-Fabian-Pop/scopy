@@ -150,6 +150,22 @@ private:
 	const int m_temperatureUpdateInterval = 5000;
 };
 
+class ad7124dash8InfoPage : public InfoPage
+{
+        Q_OBJECT
+public:
+        explicit ad7124dash8InfoPage(QString uri, Preferences* prefPanel, PhoneHome* phoneHome, struct iio_context *ctx = nullptr, QWidget *parent = 0);
+        ~ad7124dash8InfoPage() override;
+};
+
+class SwiotInfoPage : public InfoPage
+{
+        Q_OBJECT
+public:
+        explicit SwiotInfoPage(QString uri, Preferences* prefPanel, PhoneHome* phoneHome, struct iio_context *ctx = nullptr, QWidget *parent = 0);
+        ~SwiotInfoPage() override;
+};
+
 
 class InfoPageBuilder
 {
@@ -157,6 +173,8 @@ public:
 	enum InfoPageType {
 		GENERIC = 0,
 		M2K = 1,
+                ad7124dash8 = 2,
+                Swiot = 3
 	};
 
 	static InfoPage* newPage(InfoPageType page_type,
@@ -171,7 +189,9 @@ public:
 						  ctx, parent);
 		case M2K: return new M2kInfoPage(uri, prefPanel, phoneHome,
 						 ctx, parent);
-		}
+                        case ad7124dash8: return new ad7124dash8InfoPage(uri, prefPanel, phoneHome, ctx, parent);
+                        case Swiot: return new SwiotInfoPage(uri, prefPanel, phoneHome, ctx, parent);
+                }
 		return nullptr;
 	}
 };
