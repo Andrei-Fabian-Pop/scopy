@@ -77,6 +77,7 @@ class ToolLauncher_API;
 class SpectrumAnalyzer;
 class DataLogger;
 class NewInstrument;
+class SwiotRuntime;
 class Debugger;
 class ManualCalibration;
 class UserNotes;
@@ -257,6 +258,7 @@ private:
 	NetworkAnalyzer *network_analyzer;
 	SpectrumAnalyzer *spectrum_analyzer;
 	NewInstrument *newInstrument;
+	SwiotRuntime *swiotRuntime;
 	Debugger *debugger;
 	ManualCalibration *manual_calibration;
 	QWidget *current;

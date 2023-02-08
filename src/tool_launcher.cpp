@@ -38,6 +38,7 @@
 #include "singletone_wrapper.h"
 #include "phonehome.h"
 #include "datalogger/datalogger.hpp"
+#include "swiot/swiotruntime.hpp"
 
 #include "ui_device.h"
 #include "ui_tool_launcher.h"
@@ -98,7 +99,8 @@ ToolLauncher::ToolLauncher(QString prevCrashDump, QWidget *parent) :
 	power_control(nullptr), dmm(nullptr), signal_generator(nullptr),
 	oscilloscope(nullptr), current(nullptr), filter(nullptr),
 	logic_analyzer(nullptr), pattern_generator(nullptr), dio(nullptr),
-	network_analyzer(nullptr), spectrum_analyzer(nullptr),data_logger(nullptr), debugger(nullptr),
+	network_analyzer(nullptr), spectrum_analyzer(nullptr),data_logger(nullptr),
+	newInstrument(nullptr), swiotRuntime(nullptr), debugger(nullptr),
 	manual_calibration(nullptr), tl_api(new ToolLauncher_API(this)),
 	dioManager(nullptr),
 	notifier(STDIN_FILENO, QSocketNotifier::Read),
@@ -482,11 +484,17 @@ void ToolLauncher::_toolSelected(enum tool tool)
 			selectedTool = nullptr;
 		}
 		break;
-
 	case TOOL_NEWINSTRUMENT:
 		selectedTool = newInstrument;
 		break;
-
+	case TOOL_SWIOTRUNTIME:
+		if(swiotRuntime){
+			selectedTool = swiotRuntime->getToolView();
+		}
+		else{
+			swiotRuntime = nullptr;
+		}
+		break;
 	case TOOL_LAUNCHER:
 		break;
 	}
@@ -1387,6 +1395,16 @@ void adiscope::ToolLauncher::destroyContext()
 		data_logger = nullptr;
 	}
 
+	if (newInstrument) {
+		delete newInstrument;
+		newInstrument = nullptr;
+	}
+
+	if(swiotRuntime){
+		delete swiotRuntime;
+		swiotRuntime = nullptr;
+	}
+
 	if (power_control) {
 		delete power_control;
 		power_control = nullptr;
@@ -1882,6 +1900,10 @@ bool adiscope::ToolLauncher::switchContext(const QString& uri)
 			 toolList.push_back(data_logger);
 		}
 
+		if (filter->compatible(TOOL_SWIOTRUNTIME)) {
+			swiotRuntime = new SwiotRuntime(ctx, filter, menu->getToolMenuItemFor(TOOL_SWIOTRUNTIME), &js_engine,this);
+			toolList.push_back(swiotRuntime);
+		}
 
 		if (filter->compatible(TOOL_POWER_CONTROLLER)) {
 			power_control = new PowerController(ctx, menu->getToolMenuItemFor(TOOL_POWER_CONTROLLER),

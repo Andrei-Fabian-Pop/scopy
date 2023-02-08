@@ -242,6 +242,7 @@ FILE(GLOB SRC_LIST  src/*.cpp src/*.cc
 	src/logicanalyzer/*.cpp
 	src/logicanalyzer/*/*.cpp
 	src/datalogger/*.cpp
+	src/swiot/*.cpp
 	src/gui/*.cpp
 )
 

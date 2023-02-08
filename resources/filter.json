@@ -10,7 +10,7 @@
 	},
 
 	"swiot": {
-		"compatible": [ "debugger", "datalogger" ],
+		"compatible": [ "debugger", "datalogger","swiotruntime"],
 		"compatible-devices": [ "ad74413r", "max14906" ],
 		"debugger": [ "ad74413r", "max14906" ]
 	},
@@ -35,7 +35,6 @@
 		"network-devices": [ "m2k-dac-a:voltage0", "m2k-dac-b:voltage0", "m2k-adc" ],
 		"spectrum-devices": [ "m2k-adc" ],
 		"debugger": ["m2k-adc", "m2k-dac-a", "m2k-dac-b", "m2k-logic-analyzer-rx", "m2k-logic-analyzer-tx", "m2k-logic-analyzer"],
-		"calibration": ["m2k-adc", "m2k-dac-a", "m2k-dac-b", "m2k-logic-analyzer-rx", "m2k-logic-analyzer-tx", "m2k-logic-analyzer"],
-		"newinstrument":["m2k-adc"]
+		"calibration": ["m2k-adc", "m2k-dac-a", "m2k-dac-b", "m2k-logic-analyzer-rx", "m2k-logic-analyzer-tx", "m2k-logic-analyzer"]
 	}
 }

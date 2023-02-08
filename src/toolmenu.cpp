@@ -43,7 +43,8 @@ ToolMenu::ToolMenu(Preferences *preferences, QWidget *parent):
 									 << tr("Debugger")
 									 << tr("Calibration")
 									 << tr("Data Logger")
-									 << tr("NewInstrument");
+									 << tr("NewInstrument")
+									 << tr("Swiot");
 
 
 	d_availableIcons = QStringList() << "tool_oscilloscope"
@@ -56,6 +57,7 @@ ToolMenu::ToolMenu(Preferences *preferences, QWidget *parent):
 								     << "tool_voltmeter"
 								     << "tool_power_supply"
 								     << "tool_debugger"
+								     << "tool_calibration"
 								     << "tool_calibration"
 								     << "tool_calibration"
 									 << "tool_calibration";

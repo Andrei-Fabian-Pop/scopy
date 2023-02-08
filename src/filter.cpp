@@ -46,6 +46,7 @@ static const std::string tool_names[] = {
 	"calibration",
 	"datalogger",
 	"newinstrument",
+	"swiotruntime",
 	"launcher"
 };
 

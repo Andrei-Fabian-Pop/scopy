@@ -32,6 +32,8 @@
 #include <QDir>
 #include <QTemporaryDir>
 
+#include <sstream>
+
 using namespace adiscope;
 
 ConnectDialog::ConnectDialog(QWidget *widget) : QWidget(widget),
@@ -159,7 +161,12 @@ void ConnectDialog::enableDemoBtn()
 		}
 
 		QStringList arguments;
-		arguments.append(ui->demoDevicesComboBox->currentText());
+		std::stringstream ss(this->ui->demoDevicesComboBox->currentText().toStdString());
+			     std::string buff;
+			     while (std::getline(ss, buff, ' ')) {
+				     arguments.append(QString::fromStdString(buff));
+			     }
+
 		process->setProgram(program);
 		process->setArguments(arguments);
 		process->start();
