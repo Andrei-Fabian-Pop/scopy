@@ -63,13 +63,17 @@ SwiotRuntime::~SwiotRuntime()
 void SwiotRuntime::initMonitorToolView()
 {
 //	//Runtime A
-	const QVector<QString> channel_function{"digital_input", "voltage_out", "current_out", "voltage_in"};
+	const QVector<QString> channel_function{"digital_input", "voltage_out", "current_out", "voltage_in",
+						"diagnostic", "diagnostic", "diagnostic", "diagnostic"};
 //	//Runtime B
-//	const QVector<QString> channel_function{"current_in_ext", "current_in_loop", "resistance", "digital_input"};
-	//Runtime C
-//	const QVector<QString> channel_function{"digital_input_loop", "current_in_ext_hart", "current_in_ext_hart", "disable"};
+//	const QVector<QString> channel_function{"current_in_ext", "current_in_loop", "resistance", "digital_input",
+//	"diagnostic", "diagnostic", "diagnostic", "diagnostic"};
+//	//Runtime C
+//	const QVector<QString> channel_function{"digital_input_loop", "current_in_ext_hart", "current_in_ext_hart", "disable",
+//	"diagnostic", "diagnostic", "diagnostic", "diagnostic"};
 //	//Runtime D
-//	const QVector<QString> channel_function{"current_out", "disable", "disable", "disable"};//digital_out not for sure
+//	const QVector<QString> channel_function{"current_out", "disable", "disable", "disable",
+//	"diagnostic", "diagnostic", "diagnostic", "diagnostic"};//digital_out not for sure
 	int chId = 1;
 	bool first = true;
 	setUpdatesEnabled(false);
@@ -95,7 +99,7 @@ void SwiotRuntime::initMonitorToolView()
 
 			ChannelWidget *mainCh_widget =
 					m_toolView->buildNewChannel(m_monitorChannelManager, menu, false, chId, false, false, QColor("green"),
-								    QString::fromStdString("channel "), channel_function[i]);
+								    QString::fromStdString("channel "), channel_function[i] + QString::number(chId));
 			if (first) {
 				mainCh_widget->menuButton()->click();
 				first = false;

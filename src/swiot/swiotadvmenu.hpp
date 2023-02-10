@@ -154,6 +154,22 @@ private:
 
 };
 
+class DiagnosticMenu: public SwiotAdvMenu
+{
+	Q_OBJECT
+public:
+	explicit DiagnosticMenu(QWidget* parent = nullptr);
+	~DiagnosticMenu();
+	void init();
+	void connectSignalsToSlots();
+public Q_SLOTS:
+	void diagIndextChanged(int idx);
+private:
+	QComboBox *diagOptions;
+
+	void setAvailableOptions(QComboBox *list, QString attrName);
+};
+
 class WithoutAdvSettings: public SwiotAdvMenu
 {
 	Q_OBJECT
@@ -179,7 +195,8 @@ public:
 		CURRENT_IN_LOOP_HART	= 7,
 		CURRENT_IN_EXT_HART	= 8,
 		RESISTANCE		= 9,
-		DIGITAL_OUT		= 10
+		DIAGNOSTIC		= 10,
+		DIGITAL_OUT		= 11
 	};
 
 	static int decodeFunctionName(QString function){
@@ -216,6 +233,9 @@ public:
 		else if(function.compare("digital_out") == 0){
 			return DIGITAL_OUT;
 		}
+		else if(function.compare("diagnostic") == 0){
+			return DIAGNOSTIC;
+		}
 		else{
 			return -1;
 		}
@@ -237,6 +257,8 @@ public:
 				return new CurrentOutMenu(widget);
 			case DIGITAL_OUT:
 				return new DigitalOutMenu(widget);
+			case DIAGNOSTIC:
+				return new DiagnosticMenu(widget);
 			default:
 				return  new WithoutAdvSettings(widget);
 		}

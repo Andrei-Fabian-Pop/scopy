@@ -286,7 +286,7 @@ void VoltageOutMenu::init(){
 	setAvailableOptions(slewRateOptions, "slew_rate_available");
 	slewRateOptions->setCurrentIndex(0);
 
-	slewRateLayout->addWidget(new QLabel("Slew Rate",m_widget),1);
+	slewRateLayout->addWidget(new QLabel("Slew Rate (kHz)",m_widget),1);
 	slewRateLayout->addWidget(slewRateOptions,1);
 
 	addMenuLayout(slewRateLayout);
@@ -421,7 +421,7 @@ void CurrentOutMenu::init(){
 	setAvailableOptions(slewRateOptions, "slew_rate_available");
 	slewRateOptions->setCurrentIndex(0);
 
-	slewRateLayout->addWidget(new QLabel("Slew Rate",m_widget),1);
+	slewRateLayout->addWidget(new QLabel("Slew Rate (kHz)",m_widget),1);
 	slewRateLayout->addWidget(slewRateOptions,1);
 
 	addMenuLayout(slewRateLayout);
@@ -534,6 +534,49 @@ void DigitalOutMenu::init(){
 
 void DigitalOutMenu::connectSignalsToSlots(){
 
+}
+
+DiagnosticMenu::DiagnosticMenu(QWidget* parent):SwiotAdvMenu(parent)
+{
+}
+
+DiagnosticMenu::~DiagnosticMenu()
+{}
+
+void DiagnosticMenu::init(){
+	QHBoxLayout *diagLayout = new QHBoxLayout();
+
+	diagOptions = new QComboBox(m_widget);
+	setAvailableOptions(diagOptions, "diag_function_available");
+	diagOptions->setCurrentIndex(0);
+
+	diagLayout->addWidget(new QLabel("Function", m_widget));
+	diagLayout->addWidget(diagOptions);
+
+	addMenuLayout(diagLayout);
+
+	connectSignalsToSlots();
+}
+
+void DiagnosticMenu::connectSignalsToSlots(){
+	connect(diagOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DiagnosticMenu::diagIndextChanged);
+}
+
+void DiagnosticMenu::setAvailableOptions(QComboBox *list, QString attrName){
+	QStringList availableValues = m_attrValues[attrName];
+	for(const auto& slewValue : availableValues ){
+		list->addItem(slewValue);
+	}
+}
+
+void DiagnosticMenu::diagIndextChanged(int idx){
+	QString attrName = "diag_function";
+	const auto& diagFunc = m_attrValues["diag_function_available"][idx];
+
+	m_attrValues[attrName].clear();
+	m_attrValues[attrName].push_back(diagFunc);
+
+	Q_EMIT attrValuesChanged(attrName);
 }
 
 WithoutAdvSettings::WithoutAdvSettings(QWidget* parent):SwiotAdvMenu(parent)

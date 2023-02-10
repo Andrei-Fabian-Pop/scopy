@@ -33,10 +33,10 @@ QMap<QString, QStringList> SwiotAdModel::getChnlAttrValues(){
 
 QStringList SwiotAdModel::readChnlAttr(struct iio_channel* iio_chnl, QString attrName){
 	QStringList attrValues;
-	char* buffer = new char[100];
+	char* buffer = new char[200];
 	std::string s_attrName = attrName.toStdString();
 
-	int returnCode = iio_channel_attr_read(iio_chnl, s_attrName.c_str(), buffer, 99);
+	int returnCode = iio_channel_attr_read(iio_chnl, s_attrName.c_str(), buffer, 199);
 
 	if(returnCode > 0){
 		QString bufferValues(buffer);
@@ -56,10 +56,12 @@ void SwiotAdModel::updateChnlAttributes(QMap<QString,QStringList> newValues, QSt
 		std::string s_attrName = attrName.toStdString();
 
 		if(m_iio_chnl != nullptr){
+			qDebug() << attrName + " before:" + readChnlAttr(m_iio_chnl,attrName).front();
 			int retCode = iio_channel_attr_write(m_iio_chnl,s_attrName.c_str(),s_attrValue.c_str());
 			if(retCode==0){
 				m_chnlAttributes = newValues;
 			}
+			qDebug() << attrName + " after:" + readChnlAttr(m_iio_chnl,attrName).front();
 		}
 	}
 
