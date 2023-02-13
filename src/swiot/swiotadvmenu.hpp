@@ -16,7 +16,7 @@ class CustomSwitch;
 namespace gui {
 
 
-class SwiotAdvMenu:public QWidget
+class SwiotAdvMenu: public QWidget
 {
 	Q_OBJECT
 public:
@@ -53,8 +53,8 @@ public:
 public Q_SLOTS:
 	void dacCodeChanged(double value);
 private:
-	PositionSpinButton *dacCodeSpinButton;
-	QLabel *dacLabel;
+	PositionSpinButton *m_dacCodeSpinButton;
+	QLabel *m_dacLabel;
 };
 
 class DigitalInMenu: public SwiotAdvMenu
@@ -66,8 +66,8 @@ public:
 	void init();
 	void connectSignalsToSlots();
 private:
-	QComboBox *thresholdOptions;
-	PositionSpinButton *comparatorThresholdSpinButton;
+	QComboBox *m_thresholdOptions;
+	PositionSpinButton *m_comparatorThresholdSpinButton;
 public Q_SLOTS:
 	void thresholdOptionIndexChanged();
 
@@ -84,10 +84,10 @@ public:
 public Q_SLOTS:
 	void dacCodeChanged(double value);
 private:
-	QComboBox *thresholdOptions;
-	PositionSpinButton *comparatorThresholdSpinButton;
-	PositionSpinButton *dacCodeSpinButton;
-	QLabel *dacLabel;
+	QComboBox *m_thresholdOptions;
+	PositionSpinButton *m_comparatorThresholdSpinButton;
+	PositionSpinButton *m_dacCodeSpinButton;
+	QLabel *m_dacLabel;
 
 public Q_SLOTS:
 	void thresholdOptionIndexChanged();
@@ -107,11 +107,11 @@ public Q_SLOTS:
 	void slewIndexChanged(int idx);
 	void dacCodeChanged(double value);
 private:
-	PositionSpinButton *dacCodeSpinButton;
-	QLabel *dacLabel;
-	QComboBox *slewOptions;
-	QComboBox *slewStepOptions;
-	QComboBox *slewRateOptions;
+	PositionSpinButton *m_dacCodeSpinButton;
+	QLabel *m_dacLabel;
+	QComboBox *m_slewOptions;
+	QComboBox *m_slewStepOptions;
+	QComboBox *m_slewRateOptions;
 
 	void setAvailableOptions(QComboBox *list, QString attrName);
 };
@@ -131,27 +131,13 @@ public Q_SLOTS:
 	void slewIndexChanged(int idx);
 	void dacCodeChanged(double value);
 private: 
-	PositionSpinButton *dacCodeSpinButton;
-	QComboBox *slewOptions;
-	QComboBox *slewStepOptions;
-	QComboBox *slewRateOptions;
-	QLabel *dacLabel;
+	PositionSpinButton *m_dacCodeSpinButton;
+	QComboBox *m_slewOptions;
+	QComboBox *m_slewStepOptions;
+	QComboBox *m_slewRateOptions;
+	QLabel *m_dacLabel;
 
 	void setAvailableOptions(QComboBox *list, QString attrName);
-};
-
-class DigitalOutMenu: public SwiotAdvMenu
-{
-	Q_OBJECT
-public:
-	explicit DigitalOutMenu(QWidget* parent = nullptr);
-	~DigitalOutMenu();
-	void init();
-	void connectSignalsToSlots();
-private:
-	QComboBox *gpoModeOptions;
-	CustomSwitch *gpoDataSwitch;
-
 };
 
 class DiagnosticMenu: public SwiotAdvMenu
@@ -165,7 +151,7 @@ public:
 public Q_SLOTS:
 	void diagIndextChanged(int idx);
 private:
-	QComboBox *diagOptions;
+	QComboBox *m_diagOptions;
 
 	void setAvailableOptions(QComboBox *list, QString attrName);
 };
@@ -180,7 +166,8 @@ public:
 	void connectSignalsToSlots();
 };
 
-class SwiotAdvMenuBuilder{
+class SwiotAdvMenuBuilder
+{
 
 public:
 
@@ -195,45 +182,42 @@ public:
 		CURRENT_IN_LOOP_HART	= 7,
 		CURRENT_IN_EXT_HART	= 8,
 		RESISTANCE		= 9,
-		DIAGNOSTIC		= 10,
-		DIGITAL_OUT		= 11
+		DIAGNOSTIC		= 10
 	};
 
-	static int decodeFunctionName(QString function){
-		if(function.compare("voltage_in") == 0){
+	static int decodeFunctionName(QString function)
+	{
+		if (function.compare("voltage_in") == 0) {
 			return VOLTAGE_IN;
 		}
-		else if(function.compare("current_in_ext") == 0){
+		else if (function.compare("current_in_ext") == 0) {
 			return CURRENT_IN_EXT;
 		}
-		else if(function.compare("current_in_loop_hart") == 0){
+		else if (function.compare("current_in_loop_hart") == 0) {
 			return CURRENT_IN_LOOP_HART;
 		}
-		else if(function.compare("current_in_ext_hart") == 0){
+		else if (function.compare("current_in_ext_hart") == 0) {
 			return CURRENT_IN_EXT_HART;
 		}
-		else if(function.compare("resistance") == 0){
+		else if (function.compare("resistance") == 0) {
 			return RESISTANCE;
 		}
-		else if(function.compare("current_in_loop") == 0){
+		else if (function.compare("current_in_loop") == 0) {
 			return CURRENT_IN_LOOP;
 		}
-		else if(function.compare("digital_input") == 0){
+		else if (function.compare("digital_input") == 0) {
 			return DIGITAL_IN;
 		}
-		else if(function.compare("digital_input_loop") == 0){
+		else if (function.compare("digital_input_loop") == 0) {
 			return DIGITAL_IN_LOOP;
 		}
-		else if(function.compare("voltage_out") == 0){
+		else if (function.compare("voltage_out") == 0) {
 			return VOLTAGE_OUT;
 		}
-		else if(function.compare("current_out") == 0){
+		else if (function.compare("current_out") == 0) {
 			return CURRENT_OUT;
 		}
-		else if(function.compare("digital_out") == 0){
-			return DIGITAL_OUT;
-		}
-		else if(function.compare("diagnostic") == 0){
+		else if (function.compare("diagnostic") == 0) {
 			return DIAGNOSTIC;
 		}
 		else{
@@ -255,12 +239,10 @@ public:
 				return new VoltageOutMenu(widget);
 			case CURRENT_OUT:
 				return new CurrentOutMenu(widget);
-			case DIGITAL_OUT:
-				return new DigitalOutMenu(widget);
 			case DIAGNOSTIC:
 				return new DiagnosticMenu(widget);
 			default:
-				return  new WithoutAdvSettings(widget);
+				return new WithoutAdvSettings(widget);
 		}
 	}
 

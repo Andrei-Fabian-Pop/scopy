@@ -4,8 +4,8 @@
 
 using namespace adiscope;
 
-SwiotAdModel::SwiotAdModel(struct iio_channel* iio_chnl):
-	m_iio_chnl(iio_chnl)
+SwiotAdModel::SwiotAdModel(struct iio_channel* iioChnl):
+	m_iioChnl(iioChnl)
 {
 	init();
 }
@@ -13,32 +13,34 @@ SwiotAdModel::SwiotAdModel(struct iio_channel* iio_chnl):
 SwiotAdModel::~SwiotAdModel()
 {}
 
-void SwiotAdModel::init(){
-
-	if(m_iio_chnl!=nullptr){
-		int chnlAttrNumber = iio_channel_get_attrs_count(m_iio_chnl);
+void SwiotAdModel::init()
+{
+	if (m_iioChnl != nullptr) {
+		int chnlAttrNumber = iio_channel_get_attrs_count(m_iioChnl);
 		QStringList attrValues;
-		for(int i=0;i<chnlAttrNumber;i++){
-			QString attrName(iio_channel_get_attr(m_iio_chnl, i));
-			attrValues = readChnlAttr(m_iio_chnl, attrName);
+		for (int i = 0; i < chnlAttrNumber; i++) {
+			QString attrName(iio_channel_get_attr(m_iioChnl, i));
+			attrValues = readChnlAttr(m_iioChnl, attrName);
 			m_chnlAttributes[attrName] = attrValues;
 			attrValues.clear();
 		}
 	}
 }
 
-QMap<QString, QStringList> SwiotAdModel::getChnlAttrValues(){
+QMap<QString, QStringList> SwiotAdModel::getChnlAttrValues()
+{
 	return m_chnlAttributes;
 }
 
-QStringList SwiotAdModel::readChnlAttr(struct iio_channel* iio_chnl, QString attrName){
+QStringList SwiotAdModel::readChnlAttr(struct iio_channel* iio_chnl, QString attrName)
+{
 	QStringList attrValues;
 	char* buffer = new char[200];
 	std::string s_attrName = attrName.toStdString();
 
 	int returnCode = iio_channel_attr_read(iio_chnl, s_attrName.c_str(), buffer, 199);
 
-	if(returnCode > 0){
+	if (returnCode > 0) {
 		QString bufferValues(buffer);
 		attrValues = bufferValues.split(" ");
 	}
@@ -47,21 +49,22 @@ QStringList SwiotAdModel::readChnlAttr(struct iio_channel* iio_chnl, QString att
 	return attrValues;
 }
 
-void SwiotAdModel::updateChnlAttributes(QMap<QString,QStringList> newValues, QString attrName){
+void SwiotAdModel::updateChnlAttributes(QMap<QString,QStringList> newValues, QString attrName)
+{
 	QStringList value = newValues.value(attrName);
 
-	if(value.size()==1){
+	if (value.size() == 1) {
 		QString attrVal = value.first();
 		std::string s_attrValue = attrVal.toStdString();
 		std::string s_attrName = attrName.toStdString();
 
-		if(m_iio_chnl != nullptr){
-			qDebug() << attrName + " before:" + readChnlAttr(m_iio_chnl,attrName).front();
-			int retCode = iio_channel_attr_write(m_iio_chnl,s_attrName.c_str(),s_attrValue.c_str());
-			if(retCode==0){
+		if (m_iioChnl != nullptr) {
+			qDebug() << attrName + " before:" + readChnlAttr(m_iioChnl,attrName).front();
+			int retCode = iio_channel_attr_write(m_iioChnl,s_attrName.c_str(),s_attrValue.c_str());
+			if (retCode == 0) {
 				m_chnlAttributes = newValues;
 			}
-			qDebug() << attrName + " after:" + readChnlAttr(m_iio_chnl,attrName).front();
+			qDebug() << attrName + " after:" + readChnlAttr(m_iioChnl,attrName).front();
 		}
 	}
 

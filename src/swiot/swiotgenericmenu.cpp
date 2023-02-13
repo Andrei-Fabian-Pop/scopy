@@ -4,18 +4,15 @@
 using namespace adiscope::gui;
 
 SwiotGenericMenu::SwiotGenericMenu(QWidget *parent):
-	GenericMenu(parent),
-	m_swiotAdvMenu(nullptr)
-{
-
-}
+	GenericMenu(parent)
+      ,m_swiotAdvMenu(nullptr)
+{}
 
 SwiotGenericMenu::~SwiotGenericMenu()
+{}
+
+void SwiotGenericMenu::init(QString title, QString function, QColor* color)
 {
-}
-
-void SwiotGenericMenu::init(QString title, QString function, QColor* color){
-
 	initInteractiveMenu();
 	setMenuHeader(title,color,false);
 
@@ -25,21 +22,21 @@ void SwiotGenericMenu::init(QString title, QString function, QColor* color){
 	m_swiotAdvMenu = SwiotAdvMenuBuilder::newAdvMenu(m_advanceSettingsSection->getContentWidget(), function);
 
 }
-void SwiotGenericMenu::initAdvMenu(QMap<QString, QStringList> values){
-
+void SwiotGenericMenu::initAdvMenu(QMap<QString, QStringList> values)
+{
 	m_swiotAdvMenu->setAttrValues(values);
 	m_swiotAdvMenu->init();
 
 	QVector<QHBoxLayout *> layers = m_swiotAdvMenu->getMenuLayers();
-	for(int i=0;i<layers.size();i++){
+	for (int i = 0; i < layers.size(); i++) {
 		m_advanceSettingsSection->getContentWidget()->layout()->addItem(layers[i]);
 	}
 
 }
-void SwiotGenericMenu::connectMenuToOsc(){
+void SwiotGenericMenu::connectMenuToOsc()
+{}
 
-}
-
-SwiotAdvMenu* SwiotGenericMenu::getAdvMenu(){
+SwiotAdvMenu* SwiotGenericMenu::getAdvMenu()
+{
 	return m_swiotAdvMenu;
 }

@@ -12,7 +12,7 @@ namespace adiscope{
 class SwiotAdModel: public QObject{
 	Q_OBJECT
 public:
-	explicit SwiotAdModel(struct iio_channel* iio_chnl=nullptr);
+	explicit SwiotAdModel(struct iio_channel* iioChnl = nullptr);
 	~SwiotAdModel();
 
 	QMap<QString, QStringList> getChnlAttrValues();
@@ -21,7 +21,7 @@ public:
 	void init();
 	void updateChnlAttributes(QMap<QString,QStringList> newValues, QString attrName);
 private:
-	struct iio_channel* m_iio_chnl;
+	struct iio_channel* m_iioChnl;
 	QMap<QString, QStringList> m_chnlAttributes;
 
 };

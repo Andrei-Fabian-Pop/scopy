@@ -5,34 +5,40 @@
 using namespace adiscope::gui;
 
 
-SwiotAdvMenu::SwiotAdvMenu(QWidget *parent)
+SwiotAdvMenu::
+SwiotAdvMenu(QWidget *parent)
 	: QWidget(parent),
 	  m_widget(parent)
 {}
 
-SwiotAdvMenu::~SwiotAdvMenu(){
-}
+SwiotAdvMenu::~SwiotAdvMenu()
+{}
 
-void SwiotAdvMenu::addMenuLayout(QHBoxLayout *layout){
+void SwiotAdvMenu::addMenuLayout(QHBoxLayout *layout)
+{
 	m_menuLayers.push_back(layout);
 }
 
-void SwiotAdvMenu::setAttrValues(QMap<QString, QStringList> values){
+void SwiotAdvMenu::setAttrValues(QMap<QString, QStringList> values)
+{
 	m_attrValues=values;
 }
 
 
-QMap<QString, QStringList> SwiotAdvMenu::getAttrValues(){
+QMap<QString, QStringList> SwiotAdvMenu::getAttrValues()
+{
 	return m_attrValues;
 }
 
-QVector<QHBoxLayout *> SwiotAdvMenu::getMenuLayers(){
+QVector<QHBoxLayout *> SwiotAdvMenu::getMenuLayers()
+{
 	return m_menuLayers;
 }
 
-double SwiotAdvMenu::convertFromRaw(int rawValue){
+double SwiotAdvMenu::convertFromRaw(int rawValue)
+{
 	double value=0.0;
-	if(m_attrValues.contains("offset") && m_attrValues.contains("scale")){
+	if (m_attrValues.contains("offset") && m_attrValues.contains("scale")) {
 		double offset = m_attrValues["offset"][0].toDouble();
 		double scale = m_attrValues["scale"][0].toDouble();
 		value = (rawValue + offset) * scale;
@@ -40,290 +46,304 @@ double SwiotAdvMenu::convertFromRaw(int rawValue){
 	return value;
 }
 
-CurrentInLoopMenu::CurrentInLoopMenu(QWidget* parent):SwiotAdvMenu(parent)
+CurrentInLoopMenu::CurrentInLoopMenu(QWidget* parent):
+	SwiotAdvMenu(parent)
 {
 }
 
 CurrentInLoopMenu::~CurrentInLoopMenu()
 {}
 
-void CurrentInLoopMenu::init(){
+void CurrentInLoopMenu::init()
+{
 	//dac code
 	QHBoxLayout *dacCodeLayout = new QHBoxLayout();
 
-	dacCodeSpinButton = new PositionSpinButton({
+	m_dacCodeSpinButton = new PositionSpinButton({
 					{"value", 1E0}
 					}, "DAC Code", 0,
 					8191,
 					true, false, m_widget);
-	dacCodeLayout->addWidget(dacCodeSpinButton);
+	dacCodeLayout->addWidget(m_dacCodeSpinButton);
 
 	addMenuLayout(dacCodeLayout);
 
 	//dac label
-	QHBoxLayout *dacLabelLayout = new QHBoxLayout();
+	QHBoxLayout *m_dacLabelLayout = new QHBoxLayout();
 
-	dacLabel = new QLabel("mA", m_widget);
-	dacLabelLayout->addWidget(dacLabel);
-	dacLabelLayout->setAlignment(Qt::AlignRight);
+	m_dacLabel = new QLabel("mA", m_widget);
+	m_dacLabelLayout->addWidget(m_dacLabel);
+	m_dacLabelLayout->setAlignment(Qt::AlignRight);
 
-	addMenuLayout(dacLabelLayout);
+	addMenuLayout(m_dacLabelLayout);
 }
 
-void CurrentInLoopMenu::connectSignalsToSlots(){
-	connect(dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &CurrentInLoopMenu::dacCodeChanged);
+void CurrentInLoopMenu::connectSignalsToSlots()
+{
+	connect(m_dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &CurrentInLoopMenu::dacCodeChanged);
 
 }
 
-void CurrentInLoopMenu::dacCodeChanged(double value){
+void CurrentInLoopMenu::dacCodeChanged(double value)
+{
 //	QString attrName("raw");
 //	m_attrValues[attrName].clear();
 //	m_attrValues[attrName].push_back(QString::number(value));
 
 	double val = convertFromRaw(value);
-	dacLabel->clear();
-	dacLabel->setText(QString::number(val)+" mA");
+	m_dacLabel->clear();
+	m_dacLabel->setText(QString::number(val)+" mA");
 
 //	Q_EMIT attrValuesChanged(attrName);
 }
 
-DigitalInMenu::DigitalInMenu(QWidget* parent):SwiotAdvMenu(parent)
-{
-}
+DigitalInMenu::DigitalInMenu(QWidget* parent):
+	SwiotAdvMenu(parent)
+{}
 
 DigitalInMenu::~DigitalInMenu()
 {}
 
-void DigitalInMenu::init(){
+void DigitalInMenu::init()
+{
 	//Threshold Mode
 	QHBoxLayout *thresholdLayout = new QHBoxLayout();
 
-	thresholdOptions = new QComboBox(m_widget);
-	thresholdOptions->addItem(QString("Set between GND and 16V"));
-	thresholdOptions->addItem(QString("Set between GND and AVDD"));
-	thresholdOptions->setCurrentIndex(0);
+	m_thresholdOptions = new QComboBox(m_widget);
+	m_thresholdOptions->addItem(QString("Set between GND and 16V"));
+	m_thresholdOptions->addItem(QString("Set between GND and AVDD"));
+	m_thresholdOptions->setCurrentIndex(0);
 
 	thresholdLayout->addWidget(new QLabel("Threshold Mode ",m_widget));
-	thresholdLayout->addWidget(thresholdOptions);
+	thresholdLayout->addWidget(m_thresholdOptions);
 
 	addMenuLayout(thresholdLayout);
 
 	//Comparator Threshold
 	QHBoxLayout *comparatorLayout = new QHBoxLayout();
 
-	comparatorThresholdSpinButton = new PositionSpinButton({
+	m_comparatorThresholdSpinButton = new PositionSpinButton({
 							    {"V",1E0}},
 							    "Comparator Threshold",0.0,16,
 							    true, false, m_widget);
 
-	comparatorLayout->addWidget(comparatorThresholdSpinButton);
+	comparatorLayout->addWidget(m_comparatorThresholdSpinButton);
 
 	addMenuLayout(comparatorLayout);
 
 	connectSignalsToSlots();
 }
 
-void DigitalInMenu::connectSignalsToSlots(){
-	connect(thresholdOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DigitalInMenu::thresholdOptionIndexChanged);
+void DigitalInMenu::connectSignalsToSlots()
+{
+	connect(m_thresholdOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DigitalInMenu::thresholdOptionIndexChanged);
 }
 
-void DigitalInMenu::thresholdOptionIndexChanged(){
-	auto value = thresholdOptions->currentIndex();
+void DigitalInMenu::thresholdOptionIndexChanged()
+{
+	auto value = m_thresholdOptions->currentIndex();
 	if (value == 0) {
-		comparatorThresholdSpinButton->setMaxValue(16);
+		m_comparatorThresholdSpinButton->setMaxValue(16);
 	}
 	if (value == 1) {
-		comparatorThresholdSpinButton->setMaxValue(31);
+		m_comparatorThresholdSpinButton->setMaxValue(31);
 	}
 
 }
 
-DigitalInLoopMenu::DigitalInLoopMenu(QWidget* parent):SwiotAdvMenu(parent)
-{
-}
+DigitalInLoopMenu::DigitalInLoopMenu(QWidget* parent):
+	SwiotAdvMenu(parent)
+{}
 
 DigitalInLoopMenu::~DigitalInLoopMenu()
 {}
 
-void DigitalInLoopMenu::init(){
+void DigitalInLoopMenu::init()
+{
 	//Threshold Mode
 	QHBoxLayout *thresholdLayout = new QHBoxLayout();
 
-	thresholdOptions = new QComboBox(m_widget);
-	thresholdOptions->addItem(QString("Set between GND and 16V"));
-	thresholdOptions->addItem(QString("Set between GND and AVDD"));
-	thresholdOptions->setCurrentIndex(0);
+	m_thresholdOptions = new QComboBox(m_widget);
+	m_thresholdOptions->addItem(QString("Set between GND and 16V"));
+	m_thresholdOptions->addItem(QString("Set between GND and AVDD"));
+	m_thresholdOptions->setCurrentIndex(0);
 
-	thresholdLayout->addWidget(new QLabel("Threshold Mode ",m_widget),1);
-	thresholdLayout->addWidget(thresholdOptions,1);
+	thresholdLayout->addWidget(new QLabel("Threshold Mode ", m_widget), 1);
+	thresholdLayout->addWidget(m_thresholdOptions,1);
 
 	addMenuLayout(thresholdLayout);
 
 	//Comparator Threshold
 	QHBoxLayout *comparatorLayout = new QHBoxLayout();
 
-	comparatorThresholdSpinButton = new PositionSpinButton({
+	m_comparatorThresholdSpinButton = new PositionSpinButton({
 							    {"V",1E0}},
 							    "Comparator Threshold",0.0,16,
 							    true, false, m_widget);
 
-	comparatorLayout->addWidget(comparatorThresholdSpinButton);
+	comparatorLayout->addWidget(m_comparatorThresholdSpinButton);
 
 	addMenuLayout(comparatorLayout);
 
 	//dac code
 	QHBoxLayout *dacCodeLayout = new QHBoxLayout();
 
-	dacCodeSpinButton = new PositionSpinButton({
+	m_dacCodeSpinButton = new PositionSpinButton({
 					{"value", 1E0}
 					}, "DAC Code", 0,
 					8191,
 					true, false, m_widget);
 
-	dacCodeLayout->addWidget(dacCodeSpinButton);
+	dacCodeLayout->addWidget(m_dacCodeSpinButton);
 
 	addMenuLayout(dacCodeLayout);
 
 	//dac label
-	QHBoxLayout *dacLabelLayout = new QHBoxLayout();
+	QHBoxLayout *m_dacLabelLayout = new QHBoxLayout();
 
-	dacLabel = new QLabel("mA", m_widget);
-	dacLabelLayout->addWidget(dacLabel);
-	dacLabelLayout->setAlignment(Qt::AlignRight);
+	m_dacLabel = new QLabel("mA", m_widget);
+	m_dacLabelLayout->addWidget(m_dacLabel);
+	m_dacLabelLayout->setAlignment(Qt::AlignRight);
 
-	addMenuLayout(dacLabelLayout);
+	addMenuLayout(m_dacLabelLayout);
 
 	connectSignalsToSlots();
 }
 
-void DigitalInLoopMenu::connectSignalsToSlots(){
-	connect(thresholdOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DigitalInLoopMenu::thresholdOptionIndexChanged);
-	connect(dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &DigitalInLoopMenu::dacCodeChanged);
+void DigitalInLoopMenu::connectSignalsToSlots()
+{
+	connect(m_thresholdOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DigitalInLoopMenu::thresholdOptionIndexChanged);
+	connect(m_dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &DigitalInLoopMenu::dacCodeChanged);
 }
 
-void DigitalInLoopMenu::dacCodeChanged(double value){
+void DigitalInLoopMenu::dacCodeChanged(double value)
+{
 //	QString attrName("raw");
 //	m_attrValues[attrName].clear();
 //	m_attrValues[attrName].push_back(QString::number(value));
 
 	double val = convertFromRaw(value);
-	dacLabel->clear();
-	dacLabel->setText(QString::number(val)+" mA");
+	m_dacLabel->clear();
+	m_dacLabel->setText(QString::number(val) + " mA");
 
 //	Q_EMIT attrValuesChanged(attrName);
 }
 
-void DigitalInLoopMenu::thresholdOptionIndexChanged(){
-	auto value = thresholdOptions->currentIndex();
+void DigitalInLoopMenu::thresholdOptionIndexChanged()
+{
+	auto value = m_thresholdOptions->currentIndex();
 	if (value == 0) {
-		comparatorThresholdSpinButton->setMaxValue(16);
+		m_comparatorThresholdSpinButton->setMaxValue(16);
 	}
 	if (value == 1) {
-		comparatorThresholdSpinButton->setMaxValue(31);
+		m_comparatorThresholdSpinButton->setMaxValue(31);
 	}
 
 }
 
-VoltageOutMenu::VoltageOutMenu(QWidget* parent):SwiotAdvMenu(parent)
-{
-}
+VoltageOutMenu::VoltageOutMenu(QWidget* parent): SwiotAdvMenu(parent)
+{}
 
 VoltageOutMenu::~VoltageOutMenu()
 {}
 
-void VoltageOutMenu::init(){
+void VoltageOutMenu::init()
+{
 	//dac code
 	QHBoxLayout *dacCodeLayout = new QHBoxLayout();
 
-	dacCodeSpinButton = new PositionSpinButton({
+	m_dacCodeSpinButton = new PositionSpinButton({
 					{"value", 1E0}
 					}, "DAC Code", 0,
 					8191,
 					true, false, m_widget);
-	dacCodeLayout->addWidget(dacCodeSpinButton);
+	dacCodeLayout->addWidget(m_dacCodeSpinButton);
 
 	addMenuLayout(dacCodeLayout);
 
 	//dac label
-	QHBoxLayout *dacLabelLayout = new QHBoxLayout();
+	QHBoxLayout *m_dacLabelLayout = new QHBoxLayout();
 
-	dacLabel = new QLabel("V", m_widget);
-	dacLabelLayout->addWidget(dacLabel);
-	dacLabelLayout->setAlignment(Qt::AlignRight);
-	addMenuLayout(dacLabelLayout);
+	m_dacLabel = new QLabel("V", m_widget);
+	m_dacLabelLayout->addWidget(m_dacLabel);
+	m_dacLabelLayout->setAlignment(Qt::AlignRight);
+	addMenuLayout(m_dacLabelLayout);
 
 	//slew
 	QHBoxLayout *slewLayout = new QHBoxLayout();
 
-	slewOptions = new QComboBox(m_widget);
-	slewOptions->addItem(QString("Disable"));
-	slewOptions->addItem(QString("Enable"));
-	slewOptions->setCurrentIndex(0);
+	m_slewOptions = new QComboBox(m_widget);
+	m_slewOptions->addItem(QString("Disable"));
+	m_slewOptions->addItem(QString("Enable"));
+	m_slewOptions->setCurrentIndex(0);
 
-	slewLayout->addWidget(new QLabel("Slew",m_widget),1);
-	slewLayout->addWidget(slewOptions,1);
+	slewLayout->addWidget(new QLabel("Slew", m_widget), 1);
+	slewLayout->addWidget(m_slewOptions, 1);
 
 	addMenuLayout(slewLayout);
 
 	//slew step
 	QHBoxLayout *slewStepLayout = new QHBoxLayout();
 
-	slewStepOptions = new QComboBox(m_widget);
+	m_slewStepOptions = new QComboBox(m_widget);
 
-	setAvailableOptions(slewStepOptions, "slew_step_available");
-	slewStepOptions->setCurrentIndex(0);
+	setAvailableOptions(m_slewStepOptions, "slew_step_available");
+	m_slewStepOptions->setCurrentIndex(0);
 
-	slewStepLayout->addWidget(new QLabel("Slew Step Size",m_widget),1);
-	slewStepLayout->addWidget(slewStepOptions,1);
+	slewStepLayout->addWidget(new QLabel("Slew Step Size", m_widget), 1);
+	slewStepLayout->addWidget(m_slewStepOptions, 1);
 
 	addMenuLayout(slewStepLayout);
 
 	//slew rate
 	QHBoxLayout *slewRateLayout = new QHBoxLayout();
 
-	slewRateOptions = new QComboBox(m_widget);
+	m_slewRateOptions = new QComboBox(m_widget);
 
-	setAvailableOptions(slewRateOptions, "slew_rate_available");
-	slewRateOptions->setCurrentIndex(0);
+	setAvailableOptions(m_slewRateOptions, "slew_rate_available");
+	m_slewRateOptions->setCurrentIndex(0);
 
-	slewRateLayout->addWidget(new QLabel("Slew Rate (kHz)",m_widget),1);
-	slewRateLayout->addWidget(slewRateOptions,1);
+	slewRateLayout->addWidget(new QLabel("Slew Rate (kHz)", m_widget), 1);
+	slewRateLayout->addWidget(m_slewRateOptions, 1);
 
 	addMenuLayout(slewRateLayout);
 
 	connectSignalsToSlots();
 }
 
-void VoltageOutMenu::connectSignalsToSlots(){
-	connect(dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &VoltageOutMenu::dacCodeChanged);
-	connect(slewStepOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &VoltageOutMenu::slewStepIndexChanged);
-	connect(slewRateOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &VoltageOutMenu::slewRateIndexChanged);
-	connect(slewOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &VoltageOutMenu::slewIndexChanged);
+void VoltageOutMenu::connectSignalsToSlots()
+{
+	connect(m_dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &VoltageOutMenu::dacCodeChanged);
+	connect(m_slewStepOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &VoltageOutMenu::slewStepIndexChanged);
+	connect(m_slewRateOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &VoltageOutMenu::slewRateIndexChanged);
+	connect(m_slewOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &VoltageOutMenu::slewIndexChanged);
 }
 
-void VoltageOutMenu::setAvailableOptions(QComboBox *list, QString attrName){
+void VoltageOutMenu::setAvailableOptions(QComboBox *list, QString attrName)
+{
 	QStringList availableValues = m_attrValues[attrName];
 	QString unitMeasure = availableValues.takeLast();
 
-	qDebug()<<unitMeasure;
-	for(const auto& slewValue : availableValues ){
+	for (const auto& slewValue : availableValues) {
 		list->addItem(slewValue + unitMeasure);
 	}
 }
 
-void VoltageOutMenu::dacCodeChanged(double value){
+void VoltageOutMenu::dacCodeChanged(double value)
+{
 	QString attrName("raw");
 	m_attrValues[attrName].clear();
 	m_attrValues[attrName].push_back(QString::number((int)value));
 
 	double val = convertFromRaw(value);
-	dacLabel->clear();
-	dacLabel->setText(QString::number(val)+" V");
+	m_dacLabel->clear();
+	m_dacLabel->setText(QString::number(val) + " V");
 
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-void VoltageOutMenu::slewStepIndexChanged(int idx){
+void VoltageOutMenu::slewStepIndexChanged(int idx)
+{
 	QString attrName = "slew_step";
 	const auto& slewStep = m_attrValues["slew_step_available"][idx];
 
@@ -333,7 +353,8 @@ void VoltageOutMenu::slewStepIndexChanged(int idx){
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-void VoltageOutMenu::slewRateIndexChanged(int idx){
+void VoltageOutMenu::slewRateIndexChanged(int idx)
+{
 	QString attrName = "slew_rate";
 	const auto& slewStep = m_attrValues["slew_rate_available"][idx];
 
@@ -343,14 +364,15 @@ void VoltageOutMenu::slewRateIndexChanged(int idx){
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-void VoltageOutMenu::slewIndexChanged(int idx){
+void VoltageOutMenu::slewIndexChanged(int idx)
+{
 	QString attrName = "slew_en";
 
 	m_attrValues[attrName].clear();
-	if(idx==0){
+	if (idx==0) {
 		m_attrValues[attrName].push_back(QString("0"));
 	}
-	else{
+	else {
 		m_attrValues[attrName].push_back(QString("1"));
 	}
 
@@ -359,109 +381,109 @@ void VoltageOutMenu::slewIndexChanged(int idx){
 
 
 
-CurrentOutMenu::CurrentOutMenu(QWidget* parent):SwiotAdvMenu(parent)
-{
-}
+CurrentOutMenu::CurrentOutMenu(QWidget* parent): SwiotAdvMenu(parent)
+{}
 
 CurrentOutMenu::~CurrentOutMenu()
 {}
 
-void CurrentOutMenu::init(){
+void CurrentOutMenu::init()
+{
 	//dac code
 	QHBoxLayout *dacCodeLayout = new QHBoxLayout();
 
-	dacCodeSpinButton = new PositionSpinButton({
+	m_dacCodeSpinButton = new PositionSpinButton({
 					{"value", 1E0}
 					}, "DAC Code", 0,
 					8196,
 					true, false, m_widget);
-	dacCodeLayout->addWidget(dacCodeSpinButton);
+	dacCodeLayout->addWidget(m_dacCodeSpinButton);
 
 	addMenuLayout(dacCodeLayout);
 
 	//dac label
-	QHBoxLayout *dacLabelLayout = new QHBoxLayout();
+	QHBoxLayout *m_dacLabelLayout = new QHBoxLayout();
 
-	dacLabel = new QLabel("mA", m_widget);
-	dacLabelLayout->addWidget(dacLabel);
-	dacLabelLayout->setAlignment(Qt::AlignRight);
-	addMenuLayout(dacLabelLayout);
+	m_dacLabel = new QLabel("mA", m_widget);
+	m_dacLabelLayout->addWidget(m_dacLabel);
+	m_dacLabelLayout->setAlignment(Qt::AlignRight);
+	addMenuLayout(m_dacLabelLayout);
 
 	//slew
 	QHBoxLayout *slewLayout = new QHBoxLayout();
 
-	slewOptions = new QComboBox(m_widget);
-	slewOptions->addItem(QString("Disable"));
-	slewOptions->addItem(QString("Enable"));
-	slewOptions->setCurrentIndex(0);
+	m_slewOptions = new QComboBox(m_widget);
+	m_slewOptions->addItem(QString("Disable"));
+	m_slewOptions->addItem(QString("Enable"));
+	m_slewOptions->setCurrentIndex(0);
 
-	slewLayout->addWidget(new QLabel("Slew",m_widget),1);
-	slewLayout->addWidget(slewOptions,1);
+	slewLayout->addWidget(new QLabel("Slew", m_widget), 1);
+	slewLayout->addWidget(m_slewOptions, 1);
 
 	addMenuLayout(slewLayout);
 
 	//slew step
 	QHBoxLayout *slewStepLayout = new QHBoxLayout();
 
-	slewStepOptions = new QComboBox(m_widget);
+	m_slewStepOptions = new QComboBox(m_widget);
 
-	setAvailableOptions(slewStepOptions, "slew_step_available");
-	slewStepOptions->setCurrentIndex(0);
+	setAvailableOptions(m_slewStepOptions, "slew_step_available");
+	m_slewStepOptions->setCurrentIndex(0);
 
-	slewStepLayout->addWidget(new QLabel("Slew Step Size",m_widget),1);
-	slewStepLayout->addWidget(slewStepOptions,1);
+	slewStepLayout->addWidget(new QLabel("Slew Step Size", m_widget), 1);
+	slewStepLayout->addWidget(m_slewStepOptions, 1);
 
 	addMenuLayout(slewStepLayout);
 
 	//slew rate
 	QHBoxLayout *slewRateLayout = new QHBoxLayout();
 
-	slewRateOptions = new QComboBox(m_widget);
+	m_slewRateOptions = new QComboBox(m_widget);
 
-	setAvailableOptions(slewRateOptions, "slew_rate_available");
-	slewRateOptions->setCurrentIndex(0);
+	setAvailableOptions(m_slewRateOptions, "slew_rate_available");
+	m_slewRateOptions->setCurrentIndex(0);
 
 	slewRateLayout->addWidget(new QLabel("Slew Rate (kHz)",m_widget),1);
-	slewRateLayout->addWidget(slewRateOptions,1);
+	slewRateLayout->addWidget(m_slewRateOptions,1);
 
 	addMenuLayout(slewRateLayout);
 
 	connectSignalsToSlots();
 }
 
-void CurrentOutMenu::connectSignalsToSlots(){
-	connect(dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &CurrentOutMenu::dacCodeChanged);
-	connect(slewStepOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CurrentOutMenu::slewStepIndexChanged);
-	connect(slewRateOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CurrentOutMenu::slewRateIndexChanged);
-	connect(slewOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CurrentOutMenu::slewIndexChanged);
+void CurrentOutMenu::connectSignalsToSlots()
+{
+	connect(m_dacCodeSpinButton, &PositionSpinButton::valueChanged, this, &CurrentOutMenu::dacCodeChanged);
+	connect(m_slewStepOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CurrentOutMenu::slewStepIndexChanged);
+	connect(m_slewRateOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CurrentOutMenu::slewRateIndexChanged);
+	connect(m_slewOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CurrentOutMenu::slewIndexChanged);
 }
 
-void CurrentOutMenu::setAvailableOptions(QComboBox *list, QString attrName){
+void CurrentOutMenu::setAvailableOptions(QComboBox *list, QString attrName)
+{
 	QStringList availableValues = m_attrValues[attrName];
 	QString unitMeasure = availableValues.takeLast();
 
-	for(const auto& slewValue : availableValues ){
+	for (const auto& slewValue : availableValues) {
 		list->addItem(slewValue + unitMeasure);
 	}
 }
 
-void CurrentOutMenu::dacCodeChanged(double value){
+void CurrentOutMenu::dacCodeChanged(double value)
+{
 	QString attrName("raw");
 	m_attrValues[attrName].clear();
 	m_attrValues[attrName].push_back(QString::number((int)value));
 
 	double val = convertFromRaw(value);
-	dacLabel->clear();
-	dacLabel->setText(QString::number(val)+" mA");
+	m_dacLabel->clear();
+	m_dacLabel->setText(QString::number(val)+" mA");
 
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-void dacCodeChanged(){
-
-}
-
-void CurrentOutMenu::slewStepIndexChanged(int idx){
+void CurrentOutMenu::slewStepIndexChanged(int idx)
+{
 	QString attrName = "slew_step";
 	const auto& slewStep = m_attrValues["slew_step_available"][idx];
 
@@ -471,7 +493,8 @@ void CurrentOutMenu::slewStepIndexChanged(int idx){
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-void CurrentOutMenu::slewRateIndexChanged(int idx){
+void CurrentOutMenu::slewRateIndexChanged(int idx)
+{
 	QString attrName = "slew_rate";
 	const auto& slewStep = m_attrValues["slew_rate_available"][idx];
 
@@ -481,95 +504,59 @@ void CurrentOutMenu::slewRateIndexChanged(int idx){
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-void CurrentOutMenu::slewIndexChanged(int idx){
+void CurrentOutMenu::slewIndexChanged(int idx)
+{
 	QString attrName = "slew_en";
 
 	m_attrValues[attrName].clear();
-	if(idx==0){
+	if (idx == 0) {
 		m_attrValues[attrName].push_back(QString("0"));
 	}
-	else{
+	else {
 		m_attrValues[attrName].push_back(QString("1"));
 	}
 
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-DigitalOutMenu::DigitalOutMenu(QWidget* parent):SwiotAdvMenu(parent)
-{
-}
-
-DigitalOutMenu::~DigitalOutMenu()
+DiagnosticMenu::DiagnosticMenu(QWidget* parent):
+	SwiotAdvMenu(parent)
 {}
-
-void DigitalOutMenu::init(){
-	//GPO Mode
-	QHBoxLayout *gpoModeLayout = new QHBoxLayout();
-
-	gpoModeOptions = new QComboBox(m_widget);
-	gpoModeOptions->addItem(QString("100k pulldown resistor"));
-	gpoModeOptions->addItem(QString("Set using GPO_DATA bit"));
-	gpoModeOptions->addItem(QString("GPO_PAR_DATA"));
-	gpoModeOptions->addItem(QString("Comparator Output"));
-	gpoModeOptions->addItem(QString("High impedance state"));
-	gpoModeOptions->setCurrentIndex(0);
-
-	gpoModeLayout->addWidget(new QLabel("GPO Mode Config  ", m_widget),1);
-	gpoModeLayout->addWidget(gpoModeOptions,1);
-
-	addMenuLayout(gpoModeLayout);
-
-	//GPO Data
-	QHBoxLayout *gpoDataLayout = new QHBoxLayout();
-
-	gpoDataSwitch = new CustomSwitch(m_widget);
-	gpoDataSwitch->setChecked(true);
-
-	gpoDataLayout->addWidget(new QLabel("GPO Data", m_widget));
-	gpoDataLayout->addWidget(gpoDataSwitch);
-	gpoDataLayout->setAlignment(gpoDataSwitch,Qt::AlignRight);
-
-	addMenuLayout(gpoDataLayout);
-}
-
-void DigitalOutMenu::connectSignalsToSlots(){
-
-}
-
-DiagnosticMenu::DiagnosticMenu(QWidget* parent):SwiotAdvMenu(parent)
-{
-}
 
 DiagnosticMenu::~DiagnosticMenu()
 {}
 
-void DiagnosticMenu::init(){
+void DiagnosticMenu::init()
+{
 	QHBoxLayout *diagLayout = new QHBoxLayout();
 
-	diagOptions = new QComboBox(m_widget);
-	setAvailableOptions(diagOptions, "diag_function_available");
-	diagOptions->setCurrentIndex(0);
+	m_diagOptions = new QComboBox(m_widget);
+	setAvailableOptions(m_diagOptions, "diag_function_available");
+	m_diagOptions->setCurrentIndex(0);
 
 	diagLayout->addWidget(new QLabel("Function", m_widget));
-	diagLayout->addWidget(diagOptions);
+	diagLayout->addWidget(m_diagOptions);
 
 	addMenuLayout(diagLayout);
 
 	connectSignalsToSlots();
 }
 
-void DiagnosticMenu::connectSignalsToSlots(){
-	connect(diagOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DiagnosticMenu::diagIndextChanged);
+void DiagnosticMenu::connectSignalsToSlots()
+{
+	connect(m_diagOptions, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DiagnosticMenu::diagIndextChanged);
 }
 
-void DiagnosticMenu::setAvailableOptions(QComboBox *list, QString attrName){
+void DiagnosticMenu::setAvailableOptions(QComboBox *list, QString attrName)
+{
 	QStringList availableValues = m_attrValues[attrName];
-	for(const auto& slewValue : availableValues ){
+	for (const auto& slewValue : availableValues) {
 		list->addItem(slewValue);
 	}
 }
 
-void DiagnosticMenu::diagIndextChanged(int idx){
+void DiagnosticMenu::diagIndextChanged(int idx)
+{
 	QString attrName = "diag_function";
 	const auto& diagFunc = m_attrValues["diag_function_available"][idx];
 
@@ -579,19 +566,21 @@ void DiagnosticMenu::diagIndextChanged(int idx){
 	Q_EMIT attrValuesChanged(attrName);
 }
 
-WithoutAdvSettings::WithoutAdvSettings(QWidget* parent):SwiotAdvMenu(parent)
+WithoutAdvSettings::WithoutAdvSettings(QWidget* parent):
+	SwiotAdvMenu(parent)
 {}
 
 WithoutAdvSettings::~WithoutAdvSettings()
 {}
 
-void WithoutAdvSettings::init(){
+void WithoutAdvSettings::init()
+{
 	QHBoxLayout *msgLayout = new QHBoxLayout();
-	msgLayout->addWidget(new QLabel("No advanced settings available",m_widget));
+	msgLayout->addWidget(new QLabel("No advanced settings available", m_widget));
 	addMenuLayout(msgLayout);
 }
 
-void WithoutAdvSettings::connectSignalsToSlots(){
-}
+void WithoutAdvSettings::connectSignalsToSlots()
+{}
 
 
