@@ -5,7 +5,7 @@ import sys
 
 # TODO: change this to the testing_results folder (currently not populated)
 def scopy_test_resources_base_dir(version: str) -> str:
-    return f"https://github.com/analogdevicesinc/scopy/blob/{version}/"
+    return f"https://github.com/analogdevicesinc/scopy/blob/{version}/docs/"
 
 
 class TestSuiteOverview:
@@ -122,7 +122,7 @@ def maneuver(test_folder: str, test_report_dir: str, scopy_version: str) -> None
                                 comments=comments,
                                 result=result,
                                 link_to_file=scopy_test_resources_base_dir(
-                                    scopy_version) + "/" + file
+                                    scopy_version) + test_report_dir + file
                             )
 
                             if result == "PASS":
