@@ -182,7 +182,7 @@ def main() -> None:
         sys.exit(1)
 
     test_folder = os.path.abspath(sys.argv[1])
-    test_report_dir = sys.argv[2]
+    test_output_dir = sys.argv[2]
     scopy_version = sys.argv[3]
 
     # TODO: these should be received as parameters
@@ -190,7 +190,7 @@ def main() -> None:
     # test_report_dir = "tests/test_report/"
     # scopy_version = "a3a7c43"
 
-    maneuver(test_folder=test_folder, test_report_dir=test_report_dir,
+    maneuver(test_folder=test_folder, test_report_dir=test_output_dir,
              scopy_version=scopy_version)
 
 
