@@ -19,24 +19,24 @@ Test Report for install_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/install_tests.rst
       * - TST.START.APPIMAGE.X86_64
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/install_tests.rst
       * - TST.START.APPIMAGE.X86_64
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/install_tests.rst
       * - TST.START.MACOS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/install_tests.rst
       * - TST.START.WINDOWS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/install_tests.rst

@@ -19,19 +19,19 @@ Test Report for general_settings_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//general_settings_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_settings_tests.rst
       * - TST.GEN.SETUP.M2KCONN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//general_settings_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_settings_tests.rst
       * - TST.GEN.SETUP.SAVELOAD
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//general_settings_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_settings_tests.rst
       * - TST.GEN.SETUP.PREFERENCES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//general_settings_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_settings_tests.rst
