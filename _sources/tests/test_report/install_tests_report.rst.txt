@@ -19,24 +19,24 @@ Test Report for install_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/9dbb47a8d64d152e5c26f4a06db49f8107444eda/docs//home/runner/work/scopy/scopy/testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
       * - TST.START.APPIMAGE.X86_64
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/9dbb47a8d64d152e5c26f4a06db49f8107444eda/docs//home/runner/work/scopy/scopy/testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
       * - TST.START.APPIMAGE.X86_64
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/9dbb47a8d64d152e5c26f4a06db49f8107444eda/docs//home/runner/work/scopy/scopy/testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
       * - TST.START.MACOS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/9dbb47a8d64d152e5c26f4a06db49f8107444eda/docs//home/runner/work/scopy/scopy/testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
       * - TST.START.WINDOWS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/9dbb47a8d64d152e5c26f4a06db49f8107444eda/docs//home/runner/work/scopy/scopy/testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/37348db8d10a7d6369eecfd53d4c5f2e1a4bd5b5//install_tests.rst
