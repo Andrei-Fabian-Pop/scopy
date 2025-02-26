@@ -19,19 +19,19 @@ Test Report for signal_generator_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/signal_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/signal_generator_tests.rst
       * - TST.M2K.SG.CHANNEL_2_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/signal_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/signal_generator_tests.rst
       * - TST.M2K.SG.CHANNEL_1_AND_CHANNEL_2_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/signal_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/signal_generator_tests.rst
       * - TST.M2K.SG.ADDITIONAL_FEATURES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/signal_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/signal_generator_tests.rst

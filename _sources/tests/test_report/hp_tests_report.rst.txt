@@ -19,34 +19,34 @@ Test Report for hp_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/hp_tests.rst
       * - TST.HP.ADD
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/hp_tests.rst
       * - TST.HP.AUTO_SCAN_ON
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/hp_tests.rst
       * - TST.HP.AUTO_SCAN_OFF
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/hp_tests.rst
       * - TST.HP.MANUAL_SCAN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/hp_tests.rst
       * - TST.HP.NAV
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/hp_tests.rst
       * - TST.HP.UNPLUGGED
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/hp_tests.rst

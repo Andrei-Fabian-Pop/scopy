@@ -19,44 +19,44 @@ Test Report for general_preferences_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.DOUBLECLICK_ATTACH_DETACH  
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.ENABLE_OPENGL_PLOTTING  
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.SHOW_GRATICULE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.THEME
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.LANGUAGE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.REGULARLY_SCAN_NEW_DEVICES  
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.SESSION_DEVICES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
       * - TST.PREF.SHOW_PLOT_FPS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/334555f752694cd20b708eef8ece5ba0dd231564/docs/tests/test_report/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/general_preferences_tests.rst
