@@ -5,7 +5,7 @@ import sys
 
 # TODO: change this to the testing_results folder (currently not populated)
 def scopy_test_resources_base_dir(version: str) -> str:
-    return f"https://github.com/analogdevicesinc/scopy/blob/{version}/docs/"
+    return f"https://github.com/analogdevicesinc/scopy/blob/{version}/"
 
 
 class TestSuiteOverview:
@@ -109,7 +109,9 @@ def maneuver(test_folder: str, test_report_dir: str, scopy_version: str) -> None
                         full_output_name = os.path.join(
                             test_report_dir_full, f"{file_name}_report.rst")
                         TestCaseOverview.output_rst_header(
-                            output_rst_file=full_output_name, file_name=file_name)
+                            output_rst_file=full_output_name,
+                            file_name=file_name
+                        )
 
                         for match in matches:
                             uid, _, _, tested_os, comments, result = match
@@ -120,7 +122,7 @@ def maneuver(test_folder: str, test_report_dir: str, scopy_version: str) -> None
                                 comments=comments,
                                 result=result,
                                 link_to_file=scopy_test_resources_base_dir(
-                                    scopy_version) + root + "/" + file
+                                    scopy_version) + "/" + file
                             )
 
                             if result == "PASS":
