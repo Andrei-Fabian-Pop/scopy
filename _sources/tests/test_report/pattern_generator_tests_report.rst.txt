@@ -19,19 +19,19 @@ Test Report for pattern_generator_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/pattern_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/pattern_generator_tests.rst
       * - TST.M2K.PG.GROUP_CHANNEL_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/pattern_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/pattern_generator_tests.rst
       * - TST.M2K.PG.SIMULTANEOUS_GROUP_AND_INDIVIDUAL_CHANNELS_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/pattern_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/pattern_generator_tests.rst
       * - TST.M2K.PG.OTHER_FEATURES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/pattern_generator_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/pattern_generator_tests.rst

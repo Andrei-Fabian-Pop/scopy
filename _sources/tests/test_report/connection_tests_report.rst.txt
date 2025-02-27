@@ -19,24 +19,24 @@ Test Report for connection_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.UNPLUG_AUTO
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.UNPLUG_AUTO
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.UNPLUG_BEFORE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.DISCONN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst

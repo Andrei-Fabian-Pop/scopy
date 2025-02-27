@@ -19,64 +19,64 @@ Test Report for logic_analyzer_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.EXT_CHN_TRIGGER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.OSC_EXT_TRIGGER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.TRIGGER_MODES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.CLOCK_SIGNAL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.PARALLEL_DECODER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.SPI_DECODER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.UART_DECODER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.PWM_DECODER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.CHN_VISUAL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.EXPORT
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.PRINT_PLOT
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
       * - TST.LOGIC.DECODER_TABLE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/aef944fcd7e0bce57f42a2c28cdc3520f222c327/docs/tests/test_report/logic_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/241dc3a521216493ff66fe98504ef0290c1bc283/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/logic_analyzer_tests.rst
