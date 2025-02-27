@@ -3,7 +3,6 @@ import re
 import sys
 
 
-# TODO: change this to the testing_results folder (currently not populated)
 def scopy_test_resources_base_dir(version: str) -> str:
     return f"https://github.com/analogdevicesinc/scopy/blob/{version}/docs/"
 
@@ -83,13 +82,14 @@ class TestCaseOverview:
 
 def maneuver(test_folder: str, test_report_dir: str, scopy_version: str) -> None:
     tests = {}
+    test_folder_full = os.path.abspath(test_folder)
     test_report_dir_full = os.path.abspath(
         os.path.join(os.path.dirname(__file__), test_report_dir))
 
     if not os.path.exists(test_report_dir_full):
         os.mkdir(test_report_dir_full)
 
-    for root, _, files in os.walk(test_folder):
+    for root, _, files in os.walk(test_folder_full):
         for file in files:
             if file.endswith('.rst'):
                 with open(os.path.join(root, file), 'r') as f:
@@ -122,7 +122,7 @@ def maneuver(test_folder: str, test_report_dir: str, scopy_version: str) -> None
                                 comments=comments,
                                 result=result,
                                 link_to_file=scopy_test_resources_base_dir(
-                                    scopy_version) + test_report_dir + file
+                                    scopy_version) + test_folder + os.path.relpath(root, test_folder_full) + "/" + file
                             )
 
                             if result == "PASS":
@@ -183,14 +183,9 @@ def main() -> None:
         print("Received: ", sys.argv, len(sys.argv))
         sys.exit(1)
 
-    test_folder = os.path.abspath(sys.argv[1])
+    test_folder = sys.argv[1]
     test_output_dir = sys.argv[2]
     scopy_version = sys.argv[3]
-
-    # TODO: these should be received as parameters
-    # test_folder = "."
-    # test_report_dir = "tests/test_report/"
-    # scopy_version = "a3a7c43"
 
     maneuver(test_folder=test_folder, test_report_dir=test_output_dir,
              scopy_version=scopy_version)
