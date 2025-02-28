@@ -12,6 +12,6 @@ jobs:
     steps:
     - name: Test Report Generator
       run: |
-        echo "${{ github.event.pull_request.headRefOld }}"
-        echo "${{ github.event.pull_request.headRef }}"
+        echo "${{ github.event.pull_request.baseRefOld }}"
+        echo "${{ github.event.pull_request.baseRef }}"
 
