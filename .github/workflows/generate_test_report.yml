@@ -1,0 +1,17 @@
+name: Generate Test Report
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.headRefOld, 'testing_')
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test Report Generator
+      run: |
+        echo "${{ github.event.pull_request.headRefOld }}"
+        echo "${{ github.event.pull_request.headRef }}"
+
