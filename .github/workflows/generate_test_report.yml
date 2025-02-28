@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Test Report Generator
       run: |
-        echo "${{ github.event.pull_request.author }}"
-        echo "${{ github.event.pull_request.baseRefName }}"
         echo "${GITHUB_BASE_REF}"
         echo "${GITHUB_HEAD_REF}"
 
