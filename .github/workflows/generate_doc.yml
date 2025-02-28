@@ -35,8 +35,10 @@ jobs:
 
     - name: Generate test report files
       working-directory: docs
-      if: startsWith(github.ref, 'refs/heads/testing_')
+      if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'testing_')
       run: |
+        echo "Executing test_report_generator.py"
+        echo "${{ github.event.pull_request.head.ref }}"
         python3 test_report_generator.py ../testing_results/ tests/test_report/ "${{ github.sha }}"
 
     - name: Build doc
