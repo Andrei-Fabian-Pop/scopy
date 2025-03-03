@@ -48,6 +48,7 @@ jobs:
         echo "${{ github.event.pull_request.head.ref }}"
         echo "${{ github.ref }}"
         echo "${GITHUB_HEAD_REF}"
+        echo "github.event_name: ${{ github.event_name }}"
         python3 test_report_generator.py ../testing_results/ tests/test_report/ "${{ github.sha }}"
 
     - name: Build doc
