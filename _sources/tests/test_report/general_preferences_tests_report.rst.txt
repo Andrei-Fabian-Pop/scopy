@@ -19,44 +19,44 @@ Test Report for general_preferences_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.DOUBLECLICK_ATTACH_DETACH  
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.ENABLE_OPENGL_PLOTTING  
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.SHOW_GRATICULE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.THEME
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.LANGUAGE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.REGULARLY_SCAN_NEW_DEVICES  
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.SESSION_DEVICES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
       * - TST.PREF.SHOW_PLOT_FPS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/64b7231f5311d337abb439d8c30f05a382e39728/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/general_preferences_tests.rst
