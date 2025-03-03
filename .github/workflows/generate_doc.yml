@@ -1,13 +1,19 @@
 name: Generate documentation
 
 on:
-  pull_request:
-    - types: [closed, opened]
   push:
     branches:
       - main
     tags:
       - v*.*.*
+  pull_request:
+    types:
+      - closed
+      - opened
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build-doc:
@@ -36,10 +42,11 @@ jobs:
 
     - name: Generate test report files
       working-directory: docs
-      if: github.event.pull_request.merged == true || startsWith(github.ref, 'refs/heads/testing_')
+      if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
       run: |
         echo "Executing test_report_generator.py"
         echo "${{ github.event.pull_request.head.ref }}"
+        echo "${{ github.ref }}"
         echo "${GITHUB_HEAD_REF}"
         python3 test_report_generator.py ../testing_results/ tests/test_report/ "${{ github.sha }}"
 
