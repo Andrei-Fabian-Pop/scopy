@@ -19,79 +19,79 @@ Test Report for swiot1l_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.SWIOT.MODES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.SWIOT.CONFIG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.AD74413R.PLOT
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.AD74413R.CHANNEL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.AD74413R.DIAG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.AD74413R.SAMPLING
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.AD74413R.TUTORIAL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.MAX14906.PLOT
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.MAX14906.CHANNEL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.MAX14906.TUTORIAL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.FAULTS.RUN_SINGLE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.FAULTS.CLEAR_RESET
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.FAULTS.RUN_CONTINUOUS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.FAULTS.TUTORIAL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
       * - TST.SWIOT.EXTERNAL_SUPPLY
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/swiot1l/swiot1l_tests.rst

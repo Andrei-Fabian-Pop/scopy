@@ -19,24 +19,24 @@ Test Report for install_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
       * - TST.START.APPIMAGE.X86_64
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
       * - TST.START.APPIMAGE.X86_64
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
       * - TST.START.MACOS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
       * - TST.START.WINDOWS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/install_tests.rst

@@ -19,39 +19,39 @@ Test Report for network_analyzer_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
       * - TST.NA.LOWPASS_CH2_340HZ
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
       * - TST.NA.LOWPASS_CH1_1_59MHZ
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
       * - TST.NA.HIGHPASS_CH1_340HZ
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
       * - TST.NA.BANDPASS_CH1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
       * - TST.NA.BANDSTOP_CH1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
       * - TST.NA.PRINT_PLOT
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
       * - TST.NA.BUFFER_PREVIEWER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/network_analyzer_tests.rst

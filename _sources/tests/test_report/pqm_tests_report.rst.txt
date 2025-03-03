@@ -19,159 +19,159 @@ Test Report for pqm_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.RMS_INFO
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.RMS_SINGLE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.RMS_RUN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.RMS_SETTINGS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.RMS_LOG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.RMS_LOG_WRONG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.RMS_PQEVENTS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_OPEN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_INFO
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_SINGLE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_RUN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_TABLE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_SETTINGS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_LOG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_LOG_WRONG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.HARMONICS_PQEVENTS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_OPEN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_INFO
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_SETTINGS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_SETTINGS_TIMESPAN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_SETTINGS_ROLLING
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_SINGLE_TRIG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_SINGLE_ROLL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_RUN_TRIG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_RUN_ROLL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_PLOT_ZOOM
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_LOG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.WAVEFORM_LOG_WRONG
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.SETTINGS_OPEN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.SETTINGS_READ
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
       * - TST.PQM.SETTINGS_WRITE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/pqm/pqm_tests.rst

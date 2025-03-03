@@ -19,34 +19,34 @@ Test Report for hp_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
       * - TST.HP.ADD
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
       * - TST.HP.AUTO_SCAN_ON
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
       * - TST.HP.AUTO_SCAN_OFF
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
       * - TST.HP.MANUAL_SCAN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
       * - TST.HP.NAV
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
       * - TST.HP.UNPLUGGED
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/d177a664a2a3a3ede309091272d49326df66cd8b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/d6992f7ba1fb3c00116ddbcd300ef25bb0287744/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/hp_tests.rst
