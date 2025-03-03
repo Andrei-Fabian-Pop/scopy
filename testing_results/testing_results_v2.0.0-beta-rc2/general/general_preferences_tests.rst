@@ -13,11 +13,11 @@ General Preferences - Test Suite
          - Scopy version
          - Plugin version (N/A if not applicable)
          - Comments
-       * - 
-         - 
-         - 
-         - 
-         - 
+       * - Meme
+         - 2day
+         - test version 69
+         - plugin brrbrr
+         - no comments, outstanding work
 
 Setup environment:
 ------------------
