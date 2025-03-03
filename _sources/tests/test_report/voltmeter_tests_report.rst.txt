@@ -19,19 +19,19 @@ Test Report for voltmeter_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst
       * - TST.M2K.VOLTMETER.CHANNEL_2_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst
       * - TST.M2K.VOLTMETER.CHANNEL_1_AND_CHANNEL_2_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst
       * - TST.M2K.VOLTMETER.ADDITIONAL_FEATURES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/voltmeter_tests.rst

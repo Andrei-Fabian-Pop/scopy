@@ -19,19 +19,19 @@ Test Report for power_supply_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst
       * - TST.PS.NEGATIVE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst
       * - TST.PS.FINE_TUNING
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst
       * - TST.PS.TRACKING
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/power_supply_tests.rst

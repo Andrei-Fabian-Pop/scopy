@@ -19,49 +19,49 @@ Test Report for dac_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.BUFFER_LOAD
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.BUFFER_CHANNEL_SELECT
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.BUFFER_FILE_SIZE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.BUFFER_CYCLIC
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.DDS_MODES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.DDS_SINEWAVE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.DDS_ATTRS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.TUTORIAL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
       * - TST.DAC.CHANNEL_ATTRS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/cefdbefc68ff18ad99c1661025d3212ea052223b/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/8f89b95f32c83f12ed250ff4ddfea553992b1b2c/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/dac/dac_tests.rst
