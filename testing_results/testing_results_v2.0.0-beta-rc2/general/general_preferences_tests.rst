@@ -100,7 +100,7 @@ states (only applies to plugins which have this implemented).
 ..
   Any comments about the test goes here.
 
-**Result:** PASS/FAIL
+**Result:** PASS
 
 ..
   The result of the test goes here (PASS/FAIL).
