@@ -82,9 +82,10 @@ jobs:
         git config --global user.email "andrei.fabian.pop@gmail.com"
 
     - name: Create gh-pages branch
-      run: |
+      run: >
         git status ;
-        printf "$test_report_folder_name" ;
+        printf "trfn1=$test_report_folder_name" ;
+        printf "trfn2=${{ env.test_report_folder_name }}" ;
         git reset --hard ;
         git clean -fdx ;
         git ls-remote --exit-code --heads origin refs/heads/gh-pages &&
@@ -101,7 +102,7 @@ jobs:
             git rm -r ${{ github.ref_name }} --quiet || true ;
           fi ;
           if [[ "$test_report_folder_name" != "" ]]; then
-            printf "Should create this folder for testing-docs: ${test_report_folder_name}-testing"
+            printf "Should create this folder for testing-docs: ${test_report_folder_name}-testing" ;
           fi ;
         ) || (
           git checkout --orphan gh-pages ;
