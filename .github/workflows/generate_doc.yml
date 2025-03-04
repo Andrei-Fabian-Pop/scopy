@@ -42,6 +42,7 @@ jobs:
 
     - name: Generate test report files
       working-directory: docs
+      # github.event.pull_request.merged == true is not necessary, it should generate this even if it will not be deployed
       if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'testing_') && github.ref == 'refs/heads/main'
       run: |
         # Also add check that the branch is going to main
@@ -98,6 +99,7 @@ jobs:
           if [[ "$new_tag" == "1" ]]; then
             git rm -r ${{ github.ref_name }} --quiet || true ;
           fi ;
+          echo "$test_report_folder_name" ;
           if [[ "$test_report_folder_name" != "" ]]; then
             echo "Should create this folder for testing-docs: ${test_report_folder_name}-testing"
           fi ;
