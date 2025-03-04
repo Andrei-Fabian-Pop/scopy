@@ -82,8 +82,10 @@ jobs:
         git config --global user.email "andrei.fabian.pop@gmail.com"
 
     - name: Create gh-pages branch
-      run: >
+      run: |
         git status ;
+        printf "env=$GITHUB_ENV" ;
+        printf "new_tag=$new_tag" ;
         printf "trfn1=$test_report_folder_name" ;
         printf "trfn2=${{ env.test_report_folder_name }}" ;
         git reset --hard ;
