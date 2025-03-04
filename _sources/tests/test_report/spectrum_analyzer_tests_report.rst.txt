@@ -19,19 +19,19 @@ Test Report for spectrum_analyzer_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/4693aea46d52bee3e6fde7842b1c2c81b7ebdc4f/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1d4ed6ed5221231eb3a0cecd5aa7578ffd7cff23/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
       * - TST.M2K.SA.CHANNEL_2_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/4693aea46d52bee3e6fde7842b1c2c81b7ebdc4f/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1d4ed6ed5221231eb3a0cecd5aa7578ffd7cff23/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
       * - TST.M2K.SA.CHANNEL_1_AND_2_OPERATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/4693aea46d52bee3e6fde7842b1c2c81b7ebdc4f/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1d4ed6ed5221231eb3a0cecd5aa7578ffd7cff23/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
       * - TST.M2K.SA.ADDITIONAL_FEATURES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/4693aea46d52bee3e6fde7842b1c2c81b7ebdc4f/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1d4ed6ed5221231eb3a0cecd5aa7578ffd7cff23/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/spectrum_analyzer_tests.rst
