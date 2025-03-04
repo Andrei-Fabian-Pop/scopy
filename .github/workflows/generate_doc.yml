@@ -83,7 +83,8 @@ jobs:
 
     - name: Create gh-pages branch
       run: |
-        git status
+        git status ;
+        printf "$test_report_folder_name" ;
         git reset --hard ;
         git clean -fdx ;
         git ls-remote --exit-code --heads origin refs/heads/gh-pages &&
@@ -99,7 +100,6 @@ jobs:
           if [[ "$new_tag" == "1" ]]; then
             git rm -r ${{ github.ref_name }} --quiet || true ;
           fi ;
-          printf "$test_report_folder_name" ;
           if [[ "$test_report_folder_name" != "" ]]; then
             printf "Should create this folder for testing-docs: ${test_report_folder_name}-testing"
           fi ;
