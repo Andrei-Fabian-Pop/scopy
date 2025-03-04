@@ -19,54 +19,54 @@ Test Report for dev_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.FORGET
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.FORGET_CONN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.EDIT_NAME
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.SELECT_TOOL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.DETACH_TOOL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.DETACH_TOOL_RE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.COLLAPSE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.MULTI_CONN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.RM_MULTI
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
       * - TST.DEV.ADD_ORDER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/dev_tests.rst

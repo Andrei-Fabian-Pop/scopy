@@ -19,24 +19,24 @@ Test Report for connection_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.UNPLUG_AUTO
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.UNPLUG_AUTO
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.UNPLUG_BEFORE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
       * - TST.CONN.DISCONN
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/connection_tests.rst
