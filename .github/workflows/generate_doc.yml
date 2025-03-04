@@ -10,10 +10,10 @@ on:
     types:
       - closed
       - opened
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+#
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+#   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build-doc:
@@ -42,13 +42,18 @@ jobs:
 
     - name: Generate test report files
       working-directory: docs
-      if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'testing_')
+      if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'testing_') && github.ref == 'refs/heads/main'
       run: |
+        # Also add check that the branch is going to main
         echo "Executing test_report_generator.py"
         echo "${{ github.event.pull_request.head.ref }}"
         echo "${{ github.ref }}"
         echo "${GITHUB_HEAD_REF}"
         echo "github.event_name: ${{ github.event_name }}"
+        # Add to GITHUB_ENV that the test report was generated and the folder name: testing_{name}, only the name, without the prefix
+        TEST_REPORT_FOLDER_NAME=$(echo "${{ github.event.pull_request.head.ref }}" | sed "s/^testing_//") # Remove the prefix
+        echo "test_report_folder_name=${TEST_REPORT_FOLDER_NAME}"
+        echo "test_report_folder_name=${TEST_REPORT_FOLDER_NAME}" >> "$GITHUB_ENV"
         python3 test_report_generator.py ../testing_results/ tests/test_report/ "${{ github.sha }}"
 
     - name: Build doc
@@ -92,6 +97,9 @@ jobs:
           fi ;
           if [[ "$new_tag" == "1" ]]; then
             git rm -r ${{ github.ref_name }} --quiet || true ;
+          fi ;
+          if [[ "$test_report_folder_name" != "" ]]; then
+            echo "Should create this folder for testing-docs: ${test_report_folder_name}-testing"
           fi ;
         ) || (
           git checkout --orphan gh-pages ;
