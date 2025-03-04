@@ -19,109 +19,109 @@ Test Report for oscilloscope_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.POSITION_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.CONSTANT_SIGNAL_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.SINE_WAVE_SIGNAL_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.SQUARE_WAVE_SIGNAL_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.TRIANGLE_WAVE_SIGNAL_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.RAMP_SAWTOOTH_WAVE_SIGNAL_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.CURSOR_READING_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.TRIGGER_FUNCTION_1
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.MATH_CHANNEL
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.FFT_FUNCTION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.XY_FUNCTION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.EXPORT_FEATURE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.SOFTWARE_AC_COUPLING
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.PROBE_ATTENUATION
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.EXTERNAL_TRIGGER
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.AUTOSET
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.PRINT_PLOT
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.CURVE_STYLE
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.GATING
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.HISTOGRAM
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
       * - TST.OSC.ADC_DIGITAL_FILTERS
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/e8ca9e10bc76d36220c23441d10ae8b1b10949fe/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/1a5a7335bc820a2813259bc431affad13865552a/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/m2k/oscilloscope_tests.rst
