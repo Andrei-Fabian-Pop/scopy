@@ -99,9 +99,9 @@ jobs:
           if [[ "$new_tag" == "1" ]]; then
             git rm -r ${{ github.ref_name }} --quiet || true ;
           fi ;
-          echo "$test_report_folder_name" ;
+          printf "$test_report_folder_name" ;
           if [[ "$test_report_folder_name" != "" ]]; then
-            echo "Should create this folder for testing-docs: ${test_report_folder_name}-testing"
+            printf "Should create this folder for testing-docs: ${test_report_folder_name}-testing"
           fi ;
         ) || (
           git checkout --orphan gh-pages ;
