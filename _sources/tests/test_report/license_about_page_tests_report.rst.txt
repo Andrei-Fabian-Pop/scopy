@@ -1,0 +1,27 @@
+.. _license_about_page_tests_report:
+
+Test Report for license_about_page_tests
+=========================================================
+
+
+.. admonition:: Test Report license_about_page_tests
+
+   .. list-table::
+      :header-rows: 1
+      :widths: 10 10 10 10 10
+
+      * - UID
+        - TESTED OS
+        - COMMENTS
+        - RESULT
+        - TEST LINK
+      * - TST.LICENSE.POPUP
+        - 
+        - 
+        - PASS/FAIL
+        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/license_about_page_tests.rst
+      * - TST.ABOUT.PAGE
+        - 
+        - 
+        - PASS/FAIL
+        - https://github.com/analogdevicesinc/scopy/blob/c3af2bad3483e55fd6382bd091cabe3e51fc8a89/docs/../testing_results/testing_results_v2.0.0-beta-rc2/general/core/license_about_page_tests.rst
