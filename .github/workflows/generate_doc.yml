@@ -113,14 +113,13 @@ jobs:
         )
 
     - uses: actions/download-artifact@v4
-      if: ${{ env.new_tag }}
       # if: ${{ env.test_report_folder_name }}
       with:
         name: html
         path: testing/${{ env.test_report_folder_name }}
 
     - uses: actions/download-artifact@v4
-      if: ${{ env.new_tag == '0' }} && ${{ env.test_report_folder_name }}
+      if: ${{ env.new_tag == '1' }} && ${{ env.test_report_folder_name }}
       # if: ${{ env.new_tag == '0' }} && !${{ env.test_report_folder_name }}
       with:
         name: html
