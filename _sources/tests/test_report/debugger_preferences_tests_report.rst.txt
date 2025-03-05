@@ -19,9 +19,9 @@ Test Report for debugger_preferences_tests
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/4a488ccc4646eeedcd7eaf8b71ef83dbeaf6f025/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/debugger/debugger_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/2d73cf79f5d36e816fb2f521637a39cd00e7a92f/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/debugger/debugger_preferences_tests.rst
       * - TST.DBG.PREF.INCLUDE_DEBUG_ATTRIBUTES
         - 
         - 
         - PASS/FAIL
-        - https://github.com/analogdevicesinc/scopy/blob/4a488ccc4646eeedcd7eaf8b71ef83dbeaf6f025/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/debugger/debugger_preferences_tests.rst
+        - https://github.com/analogdevicesinc/scopy/blob/2d73cf79f5d36e816fb2f521637a39cd00e7a92f/docs/../testing_results/testing_results_v2.0.0-beta-rc2/plugins/debugger/debugger_preferences_tests.rst
