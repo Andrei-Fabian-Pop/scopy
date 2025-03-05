@@ -104,7 +104,8 @@ jobs:
           fi ;
           if [[ "$test_report_folder_name" != "" ]]; then
             printf "Should create this folder for testing-docs: ${test_report_folder_name}" ;
-            mkdir -p testing/${test_report_folder_name} ;
+            # This name might change
+            mkdir -p scopy_testing_results/${test_report_folder_name} ;
           fi ;
         ) || (
           git checkout --orphan gh-pages ;
@@ -116,7 +117,8 @@ jobs:
       # if: ${{ env.test_report_folder_name }}
       with:
         name: html
-        path: testing/${{ env.test_report_folder_name }}
+        path: scopy_testing_results/v2.0.0-rc2
+        # path: scopy_testing_results/${{ env.test_report_folder_name }}
 
     - uses: actions/download-artifact@v4
       if: ${{ env.new_tag == '1' }} && ${{ env.test_report_folder_name }}
