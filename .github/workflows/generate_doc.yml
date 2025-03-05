@@ -43,7 +43,7 @@ jobs:
     - name: Generate test report files
       working-directory: docs
       # github.event.pull_request.merged == true is not necessary, it should generate this even if it will not be deployed
-      if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'testing_') && github.ref == 'refs/heads/main'
+      if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'testing_') && github.ref == 'refs/heads/main'
       run: |
         # Also add check that the branch is going to main
         echo "Executing test_report_generator.py"
